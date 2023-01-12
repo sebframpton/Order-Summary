@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 450px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+      border-radius: 15px;
+      border: none;
+
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      border-radius: 15px;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: hsl(245, 75%, 52%);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: #f1f1f1;
+      border: #f1f1f1;
+      border-radius: 15px;
+      padding: 1px;
+      margin: 15px;
+    }
+
+    .flex-container>div {
+
+
+      padding: 20px;
+
+    }
+
+    .cancel {
+      padding: 10px;
+    }
+
+    .cancel:hover {
+      color: black;
+    }
+
+    .change {
+		color:grey;
+	
+		line-height:1px;
+      padding: 10px;
+	  
+    }
+
+    .change:hover {
+	font-weight:600;
+      color: hsl(245, 75%, 52%);
+	  opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/pattern-background-desktop.svg" alt="" style="height: 240px;width:100%">
+
+  <div class="card">
+    <img src="images/illustration-hero.svg" alt="Denim Jeans"
+      style="width:100%;border:none;border-top-left-radius:15px;border-top-right-radius: 15px;">
+    <h1> Order Summary</h1>
+    <p class="price" style="font-size:15px; padding:15px;">You can now listen to millions of songs, audiobooks, and
+      podcasts on any
+      device anywhere you like!
+    </p>
+    <br>
+    <div class="flex-container">
+      <div>
+        <br>
+        <img src="images/icon-music.svg" alt="">
+      </div>
+      <div>
+        <p style="font-weight:bold;">Annual Plan <br>
+        <p class="price" style="font-size:16px;">
+
+          $59.99/year</p>
+
+        </p>
+      </div>
+	  <div>
+	  </div>
+      <div>
+        <br>
+        <p class="change">
+          Change</p>
+      </div>
+    </div>
+    <br>
+
+    <p style="padding:15px;"><button> Proceed to Payment</button></p>
+
+    <p class="price cancel" style="font-size:15px;">
+      Cancel Order</p>
+    <br>
+  </div>
+
+
+
+  <br>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sebastian Frampton</a>.
+  </div>
+</body>
+
+</html>
